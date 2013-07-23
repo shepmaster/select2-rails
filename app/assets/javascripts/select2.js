@@ -2375,7 +2375,7 @@ the specific language governing permissions and limitations under the Apache Lic
             var _this = this;
             this.selection.on("mousedown", ".select2-search-choice", function (e) {
                 //killEvent(e);
-                _this.search[0].focus();
+                $(_this.search[0]).focus();
                 _this.selectChoice($(this));
             })
 
